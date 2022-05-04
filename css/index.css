@@ -34,8 +34,8 @@ select{
 #img_1{
     height:31px;
     width:31px;
-    margin-top: 20px;
-    background-color: #84c225;
+    margin-top:20px;
+    background-color:#84c225;
     color: white;
 
 }
@@ -45,5 +45,5 @@ select{
     justify-content: flex-start;
 }
 #img_2{
-    margin-right: 0px;
+    margin-right:0px;
 }
