@@ -32,11 +32,12 @@ select{
     margin:auto;
 }
 #img_1{
-    height:31px;
+    height:29px;
     width:31px;
     margin-top:20px;
     background-color:#84c225;
     color: white;
+    border:1px solid black;
 
 }
 #container_1{
