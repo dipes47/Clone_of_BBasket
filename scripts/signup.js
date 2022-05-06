@@ -21,7 +21,7 @@ async function registerUser() {
             let data = await response.json()
             if(data){
                 alert("Registration Successfull!!");
-                window.location.href="../login.html"
+                window.location.href="login.html";
             }
         } catch(err){
             console.log(err.message)
