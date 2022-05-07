@@ -12,7 +12,6 @@
 </head>
 <body>
     <div id = "nav">  </div>
-
     <div class="slideshow">
 
         <div class="Slide">
@@ -360,10 +359,7 @@
     <div id="footer"> </div>
 </body>
 </html>
-<script src="./scripts/slideupper.js"></script>
-<script src="./scripts/sliderfooter.js"></script>
-<script src="./scripts/login.js"></script>
-<script type="module">
+<script type="module" >
     // importing the navbar and footer
     import navbar from './components/navbar.js'
     import footer from './components/footer.js';
@@ -379,7 +375,7 @@
     footer_div.innerHTML = footer();
  // adding the total count of  cart items 
     let cartdata= JSON.parse(localStorage.getItem("bigbasket"))
-    document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
+    document.getElementById("itemCountNav").textContent=cartdata.length+'item';
 
 
 //     nameApnd()
@@ -390,6 +386,9 @@
 //         uName.innerHTML = userData.user.firstName;
 //       }
 //   }
-
 </script>
+<script src="./scripts/slideupper.js"></script>
+<script src="./scripts/sliderfooter.js" ></script>
+<script src="./scripts/login.js"></script>
 <script src="src/index.js"></script>
+

@@ -21,9 +21,13 @@ async function registerUser() {
             let data = await response.json()
             if(data){
                 alert("Registration Successfull!!");
+                let arr = [];
+                arr.push(data.user)
+                localStorage.setItem("details",JSON.stringify(arr));
                 window.location.href="login.html";
             }
         } catch(err){
             console.log(err.message)
         }
   }
+

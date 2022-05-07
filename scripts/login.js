@@ -13,8 +13,6 @@
                 }
             })
             let data = await response.json()
-            console.log(data.user)
-            localStorage.setItem("UserInfo",JSON.stringify(data))
             // nameApnd()
             if(data.message){
               
@@ -22,20 +20,20 @@
             }
             else{
               alert("Successfully Logged In ")
-              window.location.href="products.html";
+              window.location.href="index.html";
             }
     }catch(err){
         console.log(err.message)
     }
   }
 
-//     function nameApnd(){
-//       let userData = JSON.parse(localStorage.getItem("UserInfo")) || null;
-//       if(userData){
-//         let uName = document.getElementById("loginbutton");
-//         uName.innerHTML = userData.user.name;
-//       }
-//   }
+  //   function nameApnd(){
+  //     let userData = JSON.parse(localStorage.getItem("UserInfo")) || null;
+  //     if(userData){
+  //       let uName = document.getElementById("loginbutton");
+  //       uName.innerHTML = userData.user.name;
+  //     }
+  // }
 
 function loginWithGoogle(){
   window.location.href="https://bigbasketnewdb.herokuapp.com/auth/google"

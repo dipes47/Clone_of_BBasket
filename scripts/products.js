@@ -168,14 +168,14 @@ let obj={
 }
 cartdata.push(obj);
 // settig the total cart items
-document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
+document.getElementById("itemCountNav").textContent=cartdata.length+'item';
 // setting local storage
 localStorage.setItem("bigbasket",JSON.stringify(cartdata)); 
 
 }
 // getting the local storage of cart data
 let cartdata= JSON.parse(localStorage.getItem("bigbasket"))
-document.getElementById("itemCountNav").textContent=`${cartdata.length} item`;
+document.getElementById("itemCountNav").textContent=cartdata.length+'item';
 
 // adding sort functionality 
 
