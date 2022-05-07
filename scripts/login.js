@@ -20,7 +20,7 @@
             }
             else{
               alert("Successfully Logged In ")
-              window.location.href="index.html";
+              window.location.href="products.html";
             }
     }catch(err){
         console.log(err.message)
